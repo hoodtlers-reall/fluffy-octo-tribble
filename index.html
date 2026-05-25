@@ -1,119 +1,65 @@
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>you have to try this challenge fr</title>
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family:Arial,sans-serif;
-    }
-
-    body{
-      background:#f3f3f3;
-      color:#111;
-      min-height:100vh;
-      display:flex;
-      flex-direction:column;
-    }
-
-    header{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      padding:20px 60px;
-    }
-
-    .logo{
-      text-decoration:none;
-      color:#0f172a;
-      font-size:18px;
-      font-weight:bold;
-    }
-
-    .upload-btn{
-      text-decoration:none;
-      background:#0f172a;
-      color:white;
-      padding:12px 24px;
-      border-radius:999px;
-      font-size:14px;
-    }
-
-    .container{
-      flex:1;
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      justify-content:center;
-      gap:18px;
-    }
-
-    .video-wrapper{
-      width:720px;
-      max-width:90%;
-      background:black;
-      border-radius:10px;
-      overflow:hidden;
-    }
-
-    video{
-      width:100%;
-      display:block;
-      background:black;
-    }
-
-    .share-btn{
-      text-decoration:none;
-      background:#0f172a;
-      color:white;
-      padding:12px 24px;
-      border-radius:999px;
-      font-size:14px;
-    }
-
-    footer{
-      text-align:center;
-      padding:24px;
-      font-size:13px;
-      color:#666;
-      display:flex;
-      justify-content:center;
-      gap:30px;
-    }
-
-    footer a{
-      text-decoration:none;
-      color:#666;
-    }
-
-    @media(max-width:768px){
-      header{
-        padding:14px 16px;
-      }
-
-      .container{
-        padding:0 12px;
-      }
-
-      footer{
-        flex-direction:column;
-        gap:10px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>you have to try this challenge fr</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f3f3f3;
+            padding: 20px;
+        }
+        .video-title {
+            font-size: 1em;
+            font-weight: bold;
+            margin-bottom: 18px;
+            letter-spacing: 1px;
+            color: black;
+        }
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        video {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 10px;
+            display: block;
+        }
+        .ad-banner-inside {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 320px;
+            height: 50px;
+            background: rgba(255,255,255,0.92);
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+            overflow: hidden;
+        }
+        @media (max-width: 400px) {
+            .ad-banner-inside {
+                width: 95vw;
+                height: 40px;
+                font-size: 0.85em;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="video-wrapper">
         <video autoplay loop playsinline controls>
             <source src="https://cdn.videy.co/qYHgWOgE1.mp4" type="video/mp4">
         </video>
-</div>
 <a id="ad-link"
    href="https://omg10.com/4/11016044"
    style="display:inline-block;padding:12px 24px;background:#000000;color:white;text-decoration:none;border-radius:8px;font-family:Arial;">
@@ -124,7 +70,7 @@ const texts = [
   "Full Length Video",
   "See More Video",
   "Full HD Video",
-  "Full Length HD"
+  "Continue"
 ];
 
 const adLink = document.getElementById("ad-link");
@@ -178,8 +124,8 @@ adLink.innerHTML = `<strong>${randomText}</strong>`;
   });
 
 </script>
-
 </body>
+</html>
    <!-- Histats.com  START  (aync)-->
 <script type="text/javascript">var _Hasync= _Hasync|| [];
 _Hasync.push(['Histats.start', '1,4976330,4,0,0,0,00010000']);
@@ -192,4 +138,3 @@ hs.src = ('//s10.histats.com/js15_as.js');
 })();</script>
 <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4976330&101" alt="hidden hit counter" border="0"></a></noscript>
 <!-- Histats.com  END  -->
-</html>
